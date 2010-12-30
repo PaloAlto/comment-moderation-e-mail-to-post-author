@@ -10,11 +10,13 @@ Makes WordPress send the comment moderation notification to the actual posts aut
 
 == Description ==
 
-When a comment gets posted to a particular post, the auhtor of that post gets a notification about it. However, when that comment is held for moderation, the author receives nothing but instead the moderation notification is sent to the sites administrative moderator e-mail address as configured under Settings > General.
+When a comment gets posted to a particular post, the auhtor of that post gets a notification about it. However, when that comment is held for moderation, the author receives nothing but instead the moderation notification is sent to the sites **Administrative moderator E-mail address** as configured under **Settings > General**.
 
 For many blog or site owners, this might boil down to the same thing. But for **colaboration sites** where different people post, this might be kind of a clumsy way of handling moderation messages. Exactly the one that should be moderating the comments to his/her own post, is left out of the loop! Only by logging in from time to time, the author can see if there is any need to moderate comments. While on the other hand the site owner, with enough on his/her mind already, is bothered with each and every new comment in the moderation queue.
 
-This plugin changes that. **Just install, activate it and it's done...** Works on WordPress in both Normal and Multi-site mode.
+This plugin changes that. **Just install, activate it and it's done...** All post comment moderation notifications will be sent to the respective **Post Author**. If, by any chance, there is no author e-mail the default site admin e-mail will be used.
+
+Works on WordPress in both Normal and Multi-site mode.
 
 == Installation ==
 

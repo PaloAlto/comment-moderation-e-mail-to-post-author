@@ -2,7 +2,7 @@
 /*
 Plugin Name: Comment Moderation E-mail to Post Author
 Plugin URI: http://4visions.nl/en/wordpress-plugins/comment-moderation-e-mail-to-post-author/
-Description: Makes WordPress send the comment moderation notification to the actual posts author's e-mail address instead of the main site e-mail address. <strong>Happy with it? <em><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ravanhagen%40gmail%2ecom&item_name=Comment%20Moderation%20E-mail%20to%20Post%20Author&item_number=0%2e1&no_shipping=0&tax=0&bn=PP%2dDonationsBF&charset=UTF%2d8&lc=us">Tippin' me jar</a></em> is much appreciated. Thanks! :)</strong>
+Description: Makes WordPress send the comment moderation notification to the actual posts author's e-mail address instead of the main site e-mail address. <strong>Happy with it? <em><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ravanhagen%40gmail%2ecom&item_name=Comment%20Moderation%20E-mail%20to%20Post%20Author&item_number=0%2e1&no_shipping=0&tax=0&bn=PP%2dDonationsBF&charset=UTF%2d8&lc=us">"Tippin' me jar"</a></em> is much appreciated. Thanks! :)</strong>
 Version: 0.1
 Author: RavanH
 Author URI: http://4visions.nl/
