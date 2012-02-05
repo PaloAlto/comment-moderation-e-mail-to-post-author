@@ -2,32 +2,32 @@
 Contributors: RavanH
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ravanhagen%40gmail%2ecom&item_name=Comment%20Moderation%20E-mail%20to%20Post%20Author&item_number=0%2e1&no_shipping=0&tax=0&bn=PP%2dDonationsBF&charset=UTF%2d8&lc=us
 Tags: comments, moderation, comment, e-mail, author, comment notification, moderation queue
-Requires at least: 1.0
-Tested up to: 3.0.4
-Stable tag: 0.1
+Requires at least: 3.1
+Tested up to: 3.3.9
+Stable tag: 0.2
 
-Makes WordPress send the comment moderation notification to the actual posts author's e-mail address instead of the main site e-mail address.
+Makes WordPress send the comment moderation notification *only* to the posts author's e-mail address and no longer to the main site admin e-mail address.
 
 == Description ==
 
-NOTICE: this plugin is redundant in WP 3.1 and up. Notifications are already sent to the post author since 3.1
+This plugin could also have been called "Don't bother Site Admin with Moderation Messages", unless admin is also the author...
 
-When a comment gets posted to a particular post, the auhtor of that post gets a notification about it. However, when that comment is held for moderation, the author receives nothing but instead the moderation notification is sent to the sites **Administrative moderator E-mail address** as configured under **Settings > General**.
+When a comment gets posted to a particular post, the author of that post gets a notification about it. However, when that comment is held for moderation, the moderation notification is sent both to post author (if he/she has moderation rights) and the to the sites **Administrative moderator E-mail address** as configured under **Settings > General**.
 
-For many blog or site owners, this might boil down to the same thing. But for **colaboration sites** where different people post, this might be kind of a clumsy way of handling moderation messages. Exactly the one that should be moderating the comments to his/her own post, is left out of the loop! Only by logging in from time to time, the author can see if there is any need to moderate comments. While on the other hand the site owner, with enough on his/her mind already, is bothered with each and every new comment in the moderation queue.
+For many blog or site owners, this might boil down to the same thing. But for **colaboration sites** where different people post, this might result in overflooding the admins mailbox with moderation messages that are not his/hers to moderate. The site owner, with enough on his/her mind already, is bothered with each and every new comment in the moderation queue.
 
-This plugin changes that. **Just install, activate it and it's done...** All post comment moderation notifications will be sent to the respective **Post Author**. If, by any chance, there is no author e-mail the default site admin e-mail will be used.
+This plugin changes that. **Just install, activate it and it's done...** All post comment moderation notifications will be sent **only** to the respective **Post Author**. If, by any chance, the post author has no moderation rights *or* there is no author e-mail set, the default site admin e-mail will be used.
 
-Works on WordPress in both Normal and Multi-site mode.
+Works on WordPress 3.1 and above in both Normal and Multi-site mode.
 
 == Installation ==
 
-[Install now](http://coveredwebservices.com/wp-plugin-install/?plugin=comment-moderation-e-mail-to-post-author)
+Hit [install now](http://coveredwebservices.com/wp-plugin-install/?plugin=comment-moderation-e-mail-to-post-author), provide your site home address and continue to log in on your own site. Easy, by Covered Web Service :) 
 
 == Frequently Asked Questions ==
 
 = I see no settings page =
-There is no settings page. The plugin will do only *one thing* : make comment moderation notifications go to the authors e-mail address, not the site moderator address. 
+There is no settings page. The plugin will do only *one thing* : make comment moderation notifications go to the authors e-mail address, and no longer the site moderator address. 
 
 = Nothing looks different. Is it working at all? =
 To test if it is working:
@@ -42,10 +42,13 @@ Yep. You can install it in /plugins/ and activate it *site-by-site* or *network 
 
 == Upgrade Notice ==
 
-= 0.1 =
-First concept.
+= 0.2 =
+WP 3.1+ compatibility: no more messages to admin.
 
 == Changelog ==
+
+= 0.2 =
+WP 3.1+ compatibility
 
 = 0.1 =
 First concept: replace function wp_notify_moderator()
