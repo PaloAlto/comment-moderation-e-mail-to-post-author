@@ -6,17 +6,19 @@ Requires at least: 3.1
 Tested up to: 3.3.9
 Stable tag: 0.2
 
-Makes WordPress send the comment moderation notification *only* to the posts author's e-mail address and no longer to the main site admin e-mail address.
+Sends the comment moderation notification ONLY to the post author and no longer to the main site admin e-mail address too.
 
 == Description ==
 
-This plugin could also have been called **"Don't bother Site Admin with Moderation Messages."**
+This plugin could also have been called **Don't bother Site Admin with Everybody's Moderation Messages** but that's an even longer title. However, it explains well what this plugin does:
 
-When a comment gets posted to a particular post, the author of that post gets a notification about it. However, when that comment is held for moderation, the moderation notification is sent both to post author (if he/she has moderation rights) and to the sites **Administrative moderator E-mail address** as configured under **Settings > General** as well.
+When a comment gets posted to a particular post, the author of that post gets a notification about it. However, when that comment is held for moderation (which depends on your sites comment settings), the moderation notification is sent to *both* the post **Author** (if he/she has moderation rights) *and* the sites **Administrative moderator e-mail address** (as configured under **Settings > General**) at the same time.
 
-For many blog or site owners, this might boil down to the same thing. But when the Site Admin is not the author, like on **colaboration sites** or sites managed by a webmaster or designer where other people like the client usually posts, this might result in overflooding the admins mailbox with moderation messages that are not his/hers concern. The site admin, with enough on his/her mind already, is bothered with each and every new comment in the moderation queue.
+For many blogs or sites where the owner is the author too, this will boil down to the same thing. One message to one address. But when the Site Admin is not the author, like on **colaboration sites** or sites managed by a webmaster or designer where other people like the client usually posts, this might result in overflooding the admins mailbox with moderation messages that are not his/hers concern. The site admin, with enough on his/her mind already, is bothered with each and every new comment in the moderation queue.
 
-This plugin changes that. **Just install, activate it and it's done...** All post comment moderation notifications will be sent **only** to the respective **Post Author**. If, by any chance, the post author has no moderation rights *or* there is no author e-mail set, the default site admin e-mail will be used.
+This plugin changes that.
+
+Just install, activate it and it's done: All post comment moderation notifications will be sent **only** to the respective **Post Author**. If, by any chance, the post author has no moderation rights *or* there is no author e-mail set, the default site admin e-mail will still get the notification.
 
 Works on WordPress 3.1 and above in both Normal and Multi-site mode.
 
