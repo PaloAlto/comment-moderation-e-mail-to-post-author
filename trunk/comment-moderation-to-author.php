@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Comment Moderation E-mail Only to Post Author
+Plugin Name: Send Comment Moderation E-mail only to Post Author
 Plugin URI: http://4visions.nl/en/wordpress-plugins/comment-moderation-e-mail-to-post-author/
 Description: Sends the comment moderation notification *only* to the posts author's e-mail address and no longer to the main site admin e-mail address as set on Settings > General. Unless the author has no moderation rights. There are no options, just activate or deactivate. <strong>Happy with it? <em><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ravanhagen%40gmail%2ecom&item_name=Comment%20Moderation%20E-mail%20to%20Post%20Author&item_number=0%2e2&no_shipping=0&tax=0&bn=PP%2dDonationsBF&charset=UTF%2d8&lc=us">Buy me a coffee...</a></em> Thanks! :)</strong>
 Version: 0.2
