@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: Send Comment Moderation E-mail only to Post Author
+Plugin Name: Send Comment Moderation Notification ONLY to Post Author
 Plugin URI: http://status301.net/wordpress-plugins/comment-moderation-e-mail-to-post-author/
-Description: Allows comment moderation notification *only* to the posts author's e-mail address and no longer to the main site admin e-mail address as set on Settings > General too. Unless the author has no moderation rights. There are no options, just activate and the site admin will no monger be bothered with notifications about posts from other authors. <strong>Happy with it? <em><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ravanhagen%40gmail%2ecom&item_name=Comment%20Moderation%20E-mail%20to%20Post%20Author&item_number=0%2e2&no_shipping=0&tax=0&bn=PP%2dDonationsBF&charset=UTF%2d8&lc=us">Buy me a coffee...</a></em> Thanks! :)</strong>
+Description: Allows the comment moderation notifications **only** to the posts author's e-mail address. The notifications are not sent to the main site admin e-mail address any more, unless the author in question has no moderation rights or the author is the site admin. There are no options, just activate and the site admin will no longer be bothered with notifications about posts from other authors. <strong>Happy with it? <em><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ravanhagen%40gmail%2ecom&item_name=Comment%20Moderation%20E-mail%20to%20Post%20Author&item_number=0%2e2&no_shipping=0&tax=0&bn=PP%2dDonationsBF&charset=UTF%2d8&lc=us">Buy me a coffee...</a></em> Thanks! :)</strong>
 Version: 0.3
 Author: RavanH
 Author URI: http://status301.net/
@@ -11,7 +11,17 @@ Author URI: http://status301.net/
 // A new notification function to override the one in pluggable.php
 
 if ( !function_exists('wp_notify_moderator') ) :
-
+/**
+ * Notifies only the author opf the post about a new comment that is awaiting approval.
+ * Differs from wp_notify_moderator() in only ONE way: the $email_to does not include admin email,
+ * unless the user email is missing or the user has no moderator rights. 
+ *
+ * @since 0.3
+ * @uses $wpdb
+ *
+ * @param int $comment_id Comment ID
+ * @return bool Always returns true
+ */
 function wp_notify_moderator($comment_id) {
 	global $wpdb;
 
