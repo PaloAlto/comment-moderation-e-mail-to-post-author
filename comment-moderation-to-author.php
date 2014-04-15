@@ -12,9 +12,9 @@ Author URI: http://status301.net/
 
 if ( !function_exists('wp_notify_moderator') ) :
 /**
- * Notifies only the author opf the post about a new comment that is awaiting approval.
- * Differs from wp_notify_moderator() in only ONE way: the $email_to does not include admin email,
- * unless the user email is missing or the user has no moderator rights. 
+ * Notifies only the author of the post about a new comment that is awaiting approval.
+ * Differs from wp_notify_moderator() in only ONE way: the $email_to does not include site e-mail address,
+ * unless the users e-mail is missing or the user has no moderator rights. 
  *
  * @since 0.3
  * @uses $wpdb
