@@ -3,7 +3,7 @@ Contributors: RavanH
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ravanhagen%40gmail%2ecom&item_name=Comment%20Moderation%20E-mail%20to%20Post%20Author&item_number=0%2e1&no_shipping=0&tax=0&bn=PP%2dDonationsBF&charset=UTF%2d8&lc=us
 Tags: comments, moderation, comment, author, comment notification, comment moderation, comment moderation notification, comment moderation email, comment moderation e-mail, moderation queue, e-mail, email
 Requires at least: 3.1
-Tested up to: 3.9
+Tested up to: 4.0
 Stable tag: 0.3
 
 Allows the comment moderation notification to be sent ONLY to the post author and no longer to the site E-mail Address too.
