@@ -1,4 +1,4 @@
-=== Comment Moderation E-mail to Post Author ===
+=== Comment Moderation E-mail only to Author ===
 Contributors: RavanH
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ravanhagen%40gmail%2ecom&item_name=Comment%20Moderation%20E-mail%20to%20Post%20Author&item_number=0%2e1&no_shipping=0&tax=0&bn=PP%2dDonationsBF&charset=UTF%2d8&lc=us
 Tags: comments, moderation, comment, author, comment notification, comment moderation, comment moderation notification, comment moderation recipients, comment_moderation_recipients, comment moderation email, comment moderation e-mail, moderation queue, e-mail, email
@@ -6,11 +6,11 @@ Requires at least: 3.7
 Tested up to: 4.0
 Stable tag: 0.4
 
-Allows the comment moderation notification to be sent ONLY to the post Author and no longer to the site Administrator too.
+Send comment moderation notifications ONLY to the Author, not to the site Administration address any more.
 
 == Description ==
 
-This plugin could also have been called **Don't bother the Site Administrator with every author's Moderation Messages, unless Site Admin is the author or the author has no moderation rights** but since that's a slightly longer title, I chose to keep it as simple as I could. However, it explains well what this plugin does:
+This plugin could also have been called **Don't bother the Site Administrator with every other author's Comment Moderation Notifications, unless the author has no moderation rights** but since that's a slightly longer title, I chose to keep it as simple as I could. However, it explains well what this plugin does:
 
 Normaly, when a comment gets submitted to a particular post, the author of that post gets a notification about it. But when that comment is held for moderation (which depends on your sites comment settings) then the moderation notification is sent to *both* the post **Author** (if he/she has moderation rights) *and* the sites **Administrative moderator e-mail address** as configured under **Settings > General** at the same time.
 
